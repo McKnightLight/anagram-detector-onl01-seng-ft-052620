@@ -11,5 +11,5 @@ class Anagram
   end
 end 
 
-listen = Anagram.new("listen")
+listen = Anagrams.new("listen")
 listen.match(%w(hello world zombies pants dipper))
