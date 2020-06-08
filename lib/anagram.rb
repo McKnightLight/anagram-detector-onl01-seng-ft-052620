@@ -11,6 +11,3 @@ class Anagram
     end 
   end
 end
-
-listen = Anagrams.new("listen")
-listen.match(%w(hello world zombies pants dipper))
