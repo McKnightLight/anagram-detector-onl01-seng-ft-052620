@@ -6,8 +6,9 @@ class Anagram
   end
 
   def match(anagrams)
-  end 
-    
+    anagrams.select do |element|
+      (@words.split("").sort) == (element.split("").sort)
+  end
 end 
 
 listen = Anagram.new("listen")
