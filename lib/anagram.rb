@@ -1,4 +1,13 @@
+class Anagram
+  attr_accessor :word
 
+  def initialize(word)
+    @word = word
+  end
 
-listen = Anagrams.new("listen")
-listen.match(%w(hello world zombies pants dipper))
+  def match(words)
+    words.select do |element|
+      (@word.split("").sort) == (element.split("").sort)
+    end 
+  end
+end
