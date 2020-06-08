@@ -10,4 +10,7 @@ class Anagram
       (@word.split("").sort) == (element.split("").sort)
     end 
   end
-end 
+end
+
+listen = Anagrams.new("listen")
+listen.match(%w(hello world zombies pants dipper))
